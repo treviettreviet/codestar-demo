@@ -76,8 +76,14 @@ cd /opt/tomcat/bin
 ./shutdown.sh
 ./startup.sh
 ```
+### 5.Stop and disable firewalld
 
-### 5. Open http://127.0.0.1:8080/ in a web browser to view your application.
+```
+systemctl stop firewalld
+systemctl disable firewalld
+```
+
+### 6. Open http://127.0.0.1:8080/ in a web browser to view your application.
 
 
 What Do I Do Next?
